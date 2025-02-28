@@ -58,6 +58,9 @@ function App() {
     navigate('/'); // Redirect to the home page after logout
   };
 
+  console.log("VITE_API_URL:", import.meta.env.VITE_API_URL);
+
+
   return (
     <div>
       <Navbar isLoggedIn={isLoggedIn} role={role} onLogout={handleLogout} />
